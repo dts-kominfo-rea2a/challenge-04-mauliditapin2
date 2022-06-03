@@ -9,9 +9,8 @@ const dates = [
 
 // TODO: Buatlah fungsi createDate
 const createDate = (Tanggal, Angka) => {
-  const EpochTime = [];
-  for (let x = 0; x < Tanggal.length; x++) {
-    EpochTime.push(Date.parse(Tanggal[x]));
+  const EpochTime = []; 
+  for (let x = 0; x < Tanggal.length; x++) { EpochTime.push(Date.parse(Tanggal[x])); 
     EpochTime[x] = EpochTime[x] / 1000;
   };
   if (Angka != null) {
